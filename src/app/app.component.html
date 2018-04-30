@@ -1,0 +1,48 @@
+<!--app-sign></app-sign-->
+
+<!--button mat-button>my button</button-->
+<bs-navbar></bs-navbar>
+<!-- <mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    <span>MyMaterial</span>
+
+    <span class="example-spacer"></span>
+    <div id="buttonsBar">
+      <button mat-button class="allB"><a routerLink="/about" routerLinkActive="active">About</a></button>
+      <button mat-button class="allB"><a routerLink="/home" routerLinkActive="active">Home</a></button>
+    </div>
+    <div id="myAccountButton">
+      <button mat-button class="allB"><a routerLink="/account" routerLinkActive="active">My Account</a></button>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+
+      <button mat-menu-item [routerLink]="['signin']">
+        <span>Sign in</span>
+      </button>
+      <button mat-menu-item [routerLink]="['signup']">
+        <span>Sign up</span>
+      </button>
+
+
+      <button mat-menu-item (click)= "logout()">
+        <span>Sign out</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+
+    </mat-menu>
+
+  </mat-toolbar-row>
+</mat-toolbar> -->
+<router-outlet></router-outlet>
+
+<bs-footer class="footer"></bs-footer>
+
+

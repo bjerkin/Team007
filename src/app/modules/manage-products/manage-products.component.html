@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="row">
+      
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Adding a product</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Product name</label>
+              <input type="text" class="form-control" id="Name" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid Product name is required.
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="Image-URL">Quantity</label>
+              <input type="text" class="form-control" id="Quantity" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid Quantity is required.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="price">Product price</label>
+              <input type="text" class="form-control" id="price" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="Catagory">Catagory</label>
+              <select class="custom-select d-block w-100" id="Catagory" required>
+                <option value="">Choose...</option>
+                <option>option1</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid option.
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="FormControlFile1">Image input</label>
+              <input type="file" class="form-control-file" id="FormControlFile1">
+            </div>
+          </form>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to add the product</button>
+          <hr class="mb-4">
+        </form>
+      </div>
+    </div>
+  </div>

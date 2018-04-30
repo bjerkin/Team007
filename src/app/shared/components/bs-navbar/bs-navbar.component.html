@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <div *ngIf="!isLoggedIn">
+        <a class="nav-link" routerLink="signup">sign up</a>
+        </div>
+      </li>
+      <li class="nav-item">
+
+            <li class="nav-item">
+
+
+      </li>
+
+
+        <div *ngIf="!isLoggedIn">
+          <li ngbDropdown class="nav-item dropdown" >
+
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{sign_in}}</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" routerLink="signin" (click)="onoff()" >Google</a>
+          <a class="dropdown-item" routerLink="signin">Email</a>
+        </div>
+          </li>
+
+        </div>
+
+      <div *ngIf="isLoggedIn">
+
+      <li ngbDropdown class="nav-item dropdown" >
+
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{user_displayName}}</a>
+        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" routerLink="account">My Account</a>
+          <a class="dropdown-item" routerLink="m-products">Manage Products</a>
+          <a class="dropdown-item" routerLink="catagory">Manage Catagory</a>
+          <a class="dropdown-item" (click)= "onoff()">{{sign_in}}</a>
+        </div>
+      </li>
+
+      </div>
+    </ul>
+    <form  class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

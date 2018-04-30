@@ -1,0 +1,13 @@
+<div style="display: flex; flex-direction: column; justify-content: center; align-content: center; position: relative">
+  <div style="max-width: 600px">
+    <mat-card>
+      <mat-form-field class="mat-full-width">
+        <input matInput="email" placeholder="Your email" [formControl]="form.controls.email">
+      </mat-form-field>
+      <mat-form-field class="mat-full-width">
+        <input matInput maxlength="255" placeholder="Password" [formControl]="form.controls.password" type="password">
+      </mat-form-field>
+      <button class="mat-raised-button mat-primary" (click)="signup()">Sign up</button>
+    </mat-card>
+  </div>
+</div>
